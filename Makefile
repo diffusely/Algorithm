@@ -6,6 +6,7 @@ INC_DIR = inc/
 SORT = $(SORT_DIR)insertion_sort.cpp \
 	   $(SORT_DIR)merge_sort.cpp \
 	   $(SORT_DIR)heap_sort.cpp \
+	   $(SORT_DIR)quick_sort.cpp \
 	   $(SORT_DIR)priority_queue.cpp \
 	   $(SORT_DIR)utils.cpp
 

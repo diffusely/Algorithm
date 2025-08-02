@@ -6,16 +6,11 @@
 
 int main()
 {
-	std::vector<int> input;
+	std::vector<int> input = {2, -3, 4, 11, -100, 20, -10, 652};
 
-	Sorts::heapInsert(input, 5);
-	Sorts::heapInsert(input, 15);
-	Sorts::heapInsert(input, 125);
-	Sorts::heapInsert(input, 12511);
-	Sorts::heapInsert(input, 12533);
-	Sorts::heapInsert(input, 1252);
 
-	std::cout << Sorts::heapExtractMax(input) << "\n";
-	std::cout << Sorts::heapExtractMax(input) << "\n";
-	std::cout << Sorts::heapExtractMax(input) << "\n";
+
+	Sorts::quickSort(input, 0, input.size() - 1);
+
+	Sorts::printInput(input);
 }
